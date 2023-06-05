@@ -5,3 +5,22 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+champs = [
+    {
+    name: "Garen Crownguard",
+    age: 26,
+    ability: "Fighter",
+    image: "./assets/images/garen.jpeg",
+},
+{
+    name: "Katarina Du Couteau",
+    age: 27,
+    ability: "Assassin",
+    image: "./assets/images/kat.png",
+}
+]
+
+champs.each do |attributes|
+  Champ.create attributes
+  p "created champ #{attributes}" 
+end
