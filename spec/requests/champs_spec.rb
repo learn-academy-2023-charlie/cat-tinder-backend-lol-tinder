@@ -34,7 +34,7 @@ RSpec.describe "Champs", type: :request do
 			expect(champ.name).to eq 'Garen Crownguard'
 			expect(champ.age).to eq 3
 			expect(champ.ability).to eq 'Demacian Justice'
-			expect(champ.image).to eq "https://cdn.britannica.com/06/150806-050-6AE99C98/Proboscis-champ.jpg?w=690&h=388&c=crop"
+			expect(champ.image).to eq "./assets/images/garen.jpeg"
 		end
 	end
 
@@ -45,7 +45,7 @@ RSpec.describe "Champs", type: :request do
 					name: "Garen Crownguard",
 					age: 3,
 					ability: "Demacian Justice",
-					image: "https://cdn.britannica.com/06/150806-050-6AE99C98/Proboscis-champ.jpg?w=690&h=388&c=crop"
+					image: "./assets/images/garen.jpeg"
 				}
 			}
 
@@ -56,7 +56,7 @@ RSpec.describe "Champs", type: :request do
 					name: "Garen Crownguard",
 					age: 4,
 					ability: "Demacian Justice",
-					image: "https://cdn.britannica.com/06/150806-050-6AE99C98/Proboscis-champ.jpg?w=690&h=388&c=crop"
+					image: "./assets/images/garen.jpeg"
 				}
 			}
 
