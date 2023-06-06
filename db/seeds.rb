@@ -9,13 +9,13 @@ champs = [
     {
     name: "Garen Crownguard",
     age: 26,
-    ability: "Fighter",
+    ability: "Demacian Justice",
     image: "./assets/images/garen.jpeg",
 },
 {
     name: "Katarina Du Couteau",
     age: 27,
-    ability: "Assassin",
+    ability: "Death Lotus",
     image: "./assets/images/kat.png",
 }
 ]
