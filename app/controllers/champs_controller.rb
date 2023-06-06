@@ -7,7 +7,7 @@ class ChampsController < ApplicationController
     def create
     champ = Champ.create(champ_params)
     if champ.valid?
-      render json: champ
+      render json: champ, status: :created
     else
       render json: champ.errors, status: 422
     end
@@ -15,15 +15,17 @@ class ChampsController < ApplicationController
 
   def update
     champ = Champ.find(params[:id])
-		champ.update(champ_params)
-		render json: champ
+		if champ.update(champ_params)
+      render json: champ
+    else
+        render json: champ.errors, status: 422
+    end
 	end
 
   def destroy
     champ = Champ.find(params[:id])
     champ.destroy
     head :no_content
-    render json: champ
   end
 
   private
