@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  resources :champs
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :champs, only: [:index, :show, :create, :update, :destroy]
+  # other routes for your Rails app
 end
